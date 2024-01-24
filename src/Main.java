@@ -6,6 +6,11 @@ public class Main {
         // to see how IntelliJ IDEA suggests fixing it.
         Person p1 = new Person();
         Service s1 = new Service();
+        AddressBook addr=new AddressBook();
+        s1.setValues(p1);
+        addr.contactList.put(1,p1);
         System.out.println(s1.display(p1));
+        System.out.println(addr.contactList);
+
     }
 }

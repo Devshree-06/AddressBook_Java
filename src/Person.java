@@ -1,6 +1,6 @@
 public class Person {
-    private String firstName;
-    private String lastName;
+    private String FirstName;
+    private String LastName;
     private String City;
     private String State;
     private int Phone;
@@ -9,11 +9,11 @@ public class Person {
     private String Address;
 
     public String getFirstName() {
-        return firstName;
+        return FirstName;
     }
 
     public String getLastName() {
-        return lastName;
+        return LastName;
     }
 
     public String getCity() {
@@ -40,11 +40,11 @@ public class Person {
     }
 
     public void setFirstName(String firstName) {
-        firstName = firstName;
+        FirstName = firstName;
     }
 
     public void setLastName(String lastName) {
-        lastName = lastName;
+        LastName = lastName;
     }
 
     public void setCity(String city) {
