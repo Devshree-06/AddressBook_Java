@@ -17,10 +17,12 @@ public class Main {
         Person newp=addr.giveContact(newcontact);
         s1.editInput(newp,addr);
         System.out.println(s1.display(newp));
-        System.out.println(addr.contactList);
         //remove function to delete entry.. .contains to find the particular element to delete or update
         //.contains(element) find this element in the hashmap and update or delete it.
         //find thru contains,then remove it and then update the new entry with put method
+        System.out.println("Delete contact");
+        String giveName=scan.next();
+        s1.removeContact(giveName,addr);
 
 
 
