@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.HashMap;
 
 
 public class Service {
@@ -36,5 +37,34 @@ public class Service {
 
 
     }
+    public void editInput(Person p,AddressBook ad){
+        System.out.println("Editing existing contact");
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Enter first name");
+        String newfn=scan.next();
+        p.setFirstName(newfn);
+        /*System.out.println("Enter last name");
+        String newln=scan.next();
+        p.setLastName(newln);
+        System.out.println("Enter city");
+        String newc=scan.next();
+        p.setCity(newc);
+        System.out.println("Enter state");
+        String newS=scan.next();
+        p.setState(newS);
+        System.out.println("Enter phone");
+        int newp=scan.nextInt();
+        System.out.println("Enter zip");
+        int newz=scan.nextInt();
+        p.setZip(newz);
+        System.out.println("Enter email");
+        String newE=scan.next();
+        p.setEmail(newE);
+        System.out.println("Enter address");
+        String newaddr=scan.next();
+        p.setAddress(newaddr);*/
+
+    }
+
 
 }

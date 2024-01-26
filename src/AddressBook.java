@@ -1,5 +1,12 @@
 import java.util.HashMap;
 
 public class AddressBook {
-    HashMap<Integer,Person> contactList=new HashMap<>();
+    HashMap<String,Person> contactList=new HashMap<>();
+
+    public Person giveContact(String personid){
+        return contactList.get(personid);
+    }
+
+
+
 }
