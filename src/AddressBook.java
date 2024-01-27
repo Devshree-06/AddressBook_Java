@@ -1,4 +1,7 @@
 import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class AddressBook {
     HashMap<String,Person> contactList=new HashMap<>();
@@ -18,6 +21,15 @@ public class AddressBook {
             System.out.println("Contact not found");
             return false;
         }
+    }
+    public void addNewContact(Person p){
+        contactList.put(p.getFirstName(),p);
+    }
+    public List<Person>displayAll(){
+        return new ArrayList<>(contactList.values());
+    }
+    public Person giveFirstName(String fn){
+        return contactList.get(fn);
     }
 
 

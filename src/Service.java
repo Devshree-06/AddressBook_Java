@@ -33,19 +33,21 @@ public class Service {
         System.out.println("Enter address name");
         String addr=scan.next();
         p.setAddress(addr);
-
-
-
+    }
+    public Person setValues() {
+        Person p = new Person();
+        setValues(p);
+        return p;
     }
     public void editInput(Person p,AddressBook ad){
         System.out.println("Editing existing contact");
         Scanner scan=new Scanner(System.in);
         System.out.println("Enter first name");
         String newfn=scan.next();
-        ad.contactList.remove(p.getFirstName());
         p.setFirstName(newfn);
         //String oldName=p.getFirstName();
         //ad.contactList.remove(p.getFirstName());
+        ad.contactList.remove(p.getFirstName());
         System.out.println(ad.contactList.values());
         ad.contactList.put(newfn,p);
 
